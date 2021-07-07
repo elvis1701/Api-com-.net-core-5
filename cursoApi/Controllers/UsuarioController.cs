@@ -8,14 +8,22 @@ using System.Threading.Tasks;
 
 namespace cursoApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/v1/usuario")]
     [ApiController]
     public class UsuarioController : ControllerBase
     {
         [HttpPost]
+        [Route("logar")]
         public IActionResult Logar(LoginViewModelInput loginViewModelInput)
         {
-            return Created("",loginViewModelInput);
+            return Ok(loginViewModelInput);
+        }
+
+        [HttpPost]
+        [Route("Registrar")]
+        public IActionResult Registrar(LoginViewModelInput loginViewModelInput)
+        {
+            return Created("", loginViewModelInput);
         }
     }
 }
