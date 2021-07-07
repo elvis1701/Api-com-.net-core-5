@@ -27,3 +27,5 @@ C:\Users\elvis\source\repos\cursoApi\cursoApi\obj\Debug\net5.0\cursoApi.dll
 C:\Users\elvis\source\repos\cursoApi\cursoApi\obj\Debug\net5.0\ref\cursoApi.dll
 C:\Users\elvis\source\repos\cursoApi\cursoApi\obj\Debug\net5.0\cursoApi.pdb
 C:\Users\elvis\source\repos\cursoApi\cursoApi\obj\Debug\net5.0\cursoApi.genruntimeconfig.cache
+C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\cursoApi.xml
+C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Annotations.dll

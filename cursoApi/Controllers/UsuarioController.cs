@@ -1,6 +1,8 @@
-﻿using cursoApi.Models.Usuarios;
+﻿using cursoApi.Models;
+using cursoApi.Models.Usuarios;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +14,9 @@ namespace cursoApi.Controllers
     [ApiController]
     public class UsuarioController : ControllerBase
     {
+        [SwaggerResponse(statusCode: 200, description: "Sucesso ao autenticar",Type = typeof(LoginViewModelInput))]
+        [SwaggerResponse(statusCode: 400, description: "Campos Obrigatórios", Type = typeof(ValidaCampoViewModelOutput))]
+        [SwaggerResponse(statusCode: 500, description: "Erro interno", Type = typeof(ErroGenericoViewModel))]
         [HttpPost]
         [Route("logar")]
         public IActionResult Logar(LoginViewModelInput loginViewModelInput)
