@@ -11,7 +11,7 @@ namespace cursoApi.Models
 
        public ValidaCampoViewModelOutput(IEnumerable<string> erros)
         {
-            Erros = Erros;
+            Erros = erros;
         }
     }
 }

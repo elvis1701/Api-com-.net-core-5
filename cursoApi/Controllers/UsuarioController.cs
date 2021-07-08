@@ -7,6 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using cursoApi.Filters;
 
 namespace cursoApi.Controllers
 {
@@ -19,15 +20,22 @@ namespace cursoApi.Controllers
         [SwaggerResponse(statusCode: 500, description: "Erro interno", Type = typeof(ErroGenericoViewModel))]
         [HttpPost]
         [Route("logar")]
+        [ValidacaoModelStateCustomizado]
         public IActionResult Logar(LoginViewModelInput loginViewModelInput)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(new ValidaCampoViewModelOutput(ModelState.SelectMany(sm => sm.Value.Errors).Select(s => s.ErrorMessage)));
+            }
             return Ok(loginViewModelInput);
         }
 
         [HttpPost]
         [Route("Registrar")]
+        [ValidacaoModelStateCustomizado]
         public IActionResult Registrar(LoginViewModelInput loginViewModelInput)
         {
+
             return Created("", loginViewModelInput);
         }
     }
