@@ -11,7 +11,6 @@ C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\Microsoft.OpenApi
 C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\elvis\source\repos\cursoApi\cursoApi\obj\Debug\net5.0\cursoApi.csproj.AssemblyReference.cache
 C:\Users\elvis\source\repos\cursoApi\cursoApi\obj\Debug\net5.0\cursoApi.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\elvis\source\repos\cursoApi\cursoApi\obj\Debug\net5.0\cursoApi.AssemblyInfoInputs.cache
 C:\Users\elvis\source\repos\cursoApi\cursoApi\obj\Debug\net5.0\cursoApi.AssemblyInfo.cs
@@ -29,3 +28,10 @@ C:\Users\elvis\source\repos\cursoApi\cursoApi\obj\Debug\net5.0\cursoApi.pdb
 C:\Users\elvis\source\repos\cursoApi\cursoApi\obj\Debug\net5.0\cursoApi.genruntimeconfig.cache
 C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\cursoApi.xml
 C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\elvis\source\repos\cursoApi\cursoApi\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
