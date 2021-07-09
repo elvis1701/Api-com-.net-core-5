@@ -12,6 +12,9 @@ using System.Text;
 using System.Security.Claims;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
+using cursoApi.Infraestruture.Data;
+using Microsoft.EntityFrameworkCore;
+using cursoApi.Business.Entities;
 
 namespace cursoApi.Controllers
 {
@@ -70,6 +73,19 @@ namespace cursoApi.Controllers
         [ValidacaoModelStateCustomizado]
         public IActionResult Registrar(LoginViewModelInput loginViewModelInput)
         {
+            var optionsBuilder = new DbContextOptionsBuilder<CursoDbContext>();
+            optionsBuilder.UseSqlServer("Server=localhost;Database=CURSO;user=sa,password=7124");
+
+            CursoDbContext contexto = new CursoDbContext(optionsBuilder.Options);
+
+            var usuario = new Usuario();
+            
+            usuario.Login = loginViewModelInput.Login;
+            usuario.Senha = loginViewModelInput.Senha; 
+            usuario.Email = loginViewModelInput.Email;
+            
+            contexto.Usuario.Add(usuario);
+            contexto.SaveChanges();
 
             return Created("", loginViewModelInput);
         }
